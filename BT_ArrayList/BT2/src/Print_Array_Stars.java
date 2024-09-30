@@ -35,7 +35,8 @@ public class Print_Array_Stars {
 	         System.out.printf("(%d)",array[idx]);
 	         System.out.println("\n");
 	      }
-
+		//dong scanner
+				scanner.close();
 	}
 
 }

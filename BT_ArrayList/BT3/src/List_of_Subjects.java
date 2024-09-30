@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Iterator;
+
 
 public class List_of_Subjects {
 
@@ -22,6 +22,5 @@ public class List_of_Subjects {
 			System.out.println(list.get(i));
 			
 		}
-		
-		}
+	}
 }
