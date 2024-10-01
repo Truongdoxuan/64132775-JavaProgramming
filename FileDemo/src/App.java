@@ -14,7 +14,6 @@ public class App {
 			//ep kieu va in ra
 			System.out.print(byteRead);
 			System.out.print(" ");
-			
 		}
 		System.out.println("Done.");
 	}
