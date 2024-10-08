@@ -9,7 +9,7 @@ import java.nio.Buffer;
 public class Demo3Net {
 
 	public static void main(String[] args) throws IOException {
-		URL url = new URL("https://ntu.edu.vn/default.aspx");
+		URL url = new URL("https://tinhoc123.edu.vn/kt.txt");
 		//gui yeu cau ket noi
 		//giong nhu chung ta nhap URL
 		URLConnection connection = url.openConnection();

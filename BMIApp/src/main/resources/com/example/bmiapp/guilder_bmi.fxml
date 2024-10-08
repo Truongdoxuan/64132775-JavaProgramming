@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bmiapp.BMI_Controller">
+   <children>
+      <Button fx:id="btnTinh" layoutX="198.0" layoutY="301.0" mnemonicParsing="false" onAction="#tinhBMI" prefHeight="26.0" prefWidth="138.0" text="Tính " textFill="#3000ff" />
+      <Label layoutX="198.0" layoutY="49.0" prefHeight="49.0" prefWidth="138.0" text="Công cụ tính BMI" textFill="#0035ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="163.0" text="Cân nặng" />
+      <Label layoutX="153.0" layoutY="111.0" text="Chiều cao" />
+      <TextField fx:id="txtCC" layoutX="226.0" layoutY="107.0" />
+      <TextField fx:id="txtCN" layoutX="225.0" layoutY="159.0" />
+      <Label layoutX="383.0" layoutY="111.0" text="(cm)" />
+      <Label layoutX="384.0" layoutY="163.0" text="(kg)" />
+      <Label layoutX="148.0" layoutY="209.0" prefHeight="26.0" prefWidth="62.0" text="Chi số BMI" textAlignment="CENTER" />
+      <Label fx:id="lbKQ" layoutX="224.0" layoutY="209.0" onDragDetected="#tinhBMI" prefHeight="26.0" prefWidth="150.0" />
+      <Label fx:id="lbNhanXet" layoutX="148.0" layoutY="248.0" onDragDetected="#inNhanXet" prefHeight="26.0" prefWidth="226.0" />
+   </children>
+</AnchorPane>
