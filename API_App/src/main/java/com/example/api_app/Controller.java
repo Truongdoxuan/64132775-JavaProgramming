@@ -30,9 +30,8 @@ public class Controller {
       HttpURLConnection conn = (HttpURLConnection) url.openConnection();
       conn.setRequestMethod("GET");
 
-      // Kiểm tra mã phản hồi
       int responseCode = conn.getResponseCode();
-      if (responseCode == 200) {  // Thành công
+      if (responseCode == 200) {
         BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
         String inputLine;
         while ((inputLine = in.readLine()) != null) {
