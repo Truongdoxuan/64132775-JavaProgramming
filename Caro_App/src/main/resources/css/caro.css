@@ -1,0 +1,9 @@
+.label {
+    -fx-border-color: blue;   /* Màu viền là đen */
+    -fx-border-width: 2;       /* Độ dày viền */
+    -fx-alignment: center;      /* Căn giữa nội dung trong Label */
+    -fx-font-size: 36px;       /* Kích thước phông chữ lớn hơn */
+    -fx-min-width: 100px;      /* Đặt kích thước tối thiểu cho ô (chiều rộng) */
+    -fx-min-height: 100px;     /* Đặt kích thước tối thiểu cho ô (chiều cao) */
+    -fx-background-color: white; /* Màu nền của ô */
+}
