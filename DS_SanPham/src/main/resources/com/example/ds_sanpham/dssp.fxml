@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tbview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="511.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.ds_sanpham.SanPham_Controller">
+  <columns>
+    <TableColumn fx:id="cl_id" prefWidth="75.0" text="Id" />
+      <TableColumn fx:id="cl_tensp" prefWidth="155.199951171875" text="Tên sản phẩm" />
+    <TableColumn fx:id="cl_giasp" prefWidth="99.20002746582031" text="Giá sản phẩm" />
+      <TableColumn fx:id="cl_mota" prefWidth="178.4000244140625" text="Mô tả" />
+  </columns>
+</TableView>
