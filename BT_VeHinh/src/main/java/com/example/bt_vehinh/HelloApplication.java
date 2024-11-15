@@ -5,19 +5,25 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class HelloApplication extends Canvas{
   @Override
-  public void start(Stage stage) throws IOException {
-    FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-    Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-    stage.setTitle("Hello!");
-    stage.setScene(scene);
-    stage.show();
+  public void paint(Graphics g) {
+    g.setColor(Color.BLUE);
+    g.fillRect(50,50,100,50);
   }
 
   public static void main(String[] args) {
-    launch();
+    JFrame frame = new JFrame("Hình");
+    HelloApplication app = new HelloApplication();
+
+    app.setSize(500,300);
+    frame.add(app);
+    frame.setSize(500,300);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(true);
   }
 }
