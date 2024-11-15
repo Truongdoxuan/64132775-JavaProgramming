@@ -1,21 +1,36 @@
 package com.example.bt_vehinh;
 import javafx.application.Application;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.layout.Pane;
+import javafx.scene.control.Button;
 import javafx.scene.shape.ArcType;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.paint.Color;
 
+import java.io.IOException;
+
 
 public class HelloApplication extends Application {
-  @Override
-  public void start(Stage stage) {
-    Pane root = new Pane();
-    Canvas canvas = new Canvas(600, 400); //kích thước của canvas
-    GraphicsContext g = canvas.getGraphicsContext2D();
+  @FXML
+  Canvas canvas;
+  @FXML
+  Button btn_draw;
 
+  @Override
+  public void start(Stage stage) throws IOException {
+    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("draw.fxml"));
+    Scene scene = new Scene(fxmlLoader.load());
+    stage.setTitle("Vẽ hình khi nhấn nút vẽ");
+    stage.setScene(scene);
+    stage.show();
+  }
+
+  @FXML
+  public void draw() {
+    GraphicsContext g = canvas.getGraphicsContext2D();
     //hình tròn khuất
     g.setFill(Color.WHITE);
     g.setStroke(Color.BLACK);
@@ -77,11 +92,6 @@ public class HelloApplication extends Application {
     //phải
     g.strokeArc(225, 225, 15, 15, -90, 180, ArcType.OPEN);
     g.strokeArc(215, 225, 15, 15, -270, 180, ArcType.OPEN);
-    root.getChildren().add(canvas);
-    Scene scene = new Scene(root, 500, 300);
-    stage.setTitle("Bài tập vẽ hình");
-    stage.setScene(scene);
-    stage.show();
   }
 
   public static void main(String[] args) {
