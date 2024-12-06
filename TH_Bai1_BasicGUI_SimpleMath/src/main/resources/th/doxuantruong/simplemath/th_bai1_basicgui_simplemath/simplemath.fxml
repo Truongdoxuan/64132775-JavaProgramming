@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="114.0" layoutY="97.0" text="SIMPLE MATH" textAlignment="CENTER" textFill="#3bff00">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="195.0" text="Nhập số A" />
+      <Label layoutX="48.0" layoutY="260.0" text="Nhập số B" />
+      <TextField fx:id="txt_a" layoutX="125.0" layoutY="191.0" />
+      <TextField fx:id="txt_b" layoutX="126.0" layoutY="256.0" />
+      <RadioButton fx:id="rd_cong" layoutX="58.0" layoutY="347.0" mnemonicParsing="false" text="+">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rd_tru" layoutX="135.0" layoutY="347.0" mnemonicParsing="false" text="-">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rd_nhan" layoutX="195.0" layoutY="347.0" mnemonicParsing="false" text="*">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rd_chia" layoutX="258.0" layoutY="347.0" mnemonicParsing="false" text="\\">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="btn_tinh" layoutX="143.0" layoutY="415.0" mnemonicParsing="false" onAction="#tinh" prefHeight="26.0" prefWidth="73.0" text="Tính toán" />
+      <Label layoutX="144.0" layoutY="487.0" text="Kết quả">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_kq" layoutX="105.0" layoutY="539.0" prefHeight="36.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
