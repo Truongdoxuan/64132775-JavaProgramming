@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="th.doxuantruong.flashquiz.th_bai3_flashquizgui.FlashQuiz_Controller">
+   <left>
+      <AnchorPane prefHeight="570.0" prefWidth="301.0" style="-fx-background-color: #0A7A68;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="90.0" layoutY="18.0" text="FLASH QZ" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="45.0" layoutY="67.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #FFE135;" text="Câu 10" />
+            <Button layoutX="46.0" layoutY="116.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #FFE135;" text="Câu 9" />
+            <Button layoutX="46.0" layoutY="166.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #FFE135;" text="Câu 8" />
+            <Button layoutX="46.0" layoutY="216.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #FFE135;" text="Câu 7" />
+            <Button layoutX="46.0" layoutY="266.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #FFE135;" text="Câu 6" />
+            <Button layoutX="47.0" layoutY="315.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #FFE135;" text="Câu 5" />
+            <Button layoutX="46.0" layoutY="365.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #FFE135;" text="Câu 4" />
+            <Button layoutX="46.0" layoutY="415.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #FFE135;" text="Câu 3" />
+            <Button layoutX="46.0" layoutY="513.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #FFE135;" text="Câu 1" />
+            <Button layoutX="46.0" layoutY="464.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-background-color: #FFE135;" text="Câu 2" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="570.0" prefWidth="719.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
