@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="th.doxuantruong.flashquiz.th_bai4_flashquiz.controller.FlashQuiz_Controller">
    <children>
-      <TableView prefHeight="400.0" prefWidth="690.0">
+      <TableView fx:id="cauHoiTableView" prefHeight="351.0" prefWidth="871.0">
         <columns>
-          <TableColumn id="cl_cauhoi" prefWidth="199.99999696016312" text="Câu hỏi" />
-          <TableColumn id="cl_hinh" minWidth="0.0" prefWidth="66.40003967285156" text="Hình" />
-            <TableColumn id="cl_pa1" prefWidth="77.5999755859375" text="Phương án 1" />
-            <TableColumn id="cl_pa2" prefWidth="79.20001220703125" text="Phương án 2" />
-            <TableColumn id="cl_pa3" prefWidth="79.9998779296875" text="Phương án 3" />
-            <TableColumn id="cl_pa4" prefWidth="78.39996337890625" text="Phương án 4" />
-            <TableColumn id="cl_padung" prefWidth="103.2000732421875" text="Phương án đúng" />
+            <TableColumn fx:id="cl_cauhoi" prefWidth="313.6000183224678" text="Câu hỏi" />
+            <TableColumn fx:id="cl_hinh" minWidth="0.0" prefWidth="49.5999755859375" text="Hình" />
+            <TableColumn fx:id="cl_pa1" prefWidth="91.20001220703125" text="Phương án 1" />
+            <TableColumn fx:id="cl_pa2" prefWidth="91.20001220703125" text="Phương án 2" />
+            <TableColumn fx:id="cl_pa3" prefWidth="91.20001220703125" text="Phương án 3" />
+            <TableColumn fx:id="cl_pa4" prefWidth="91.20001220703125" text="Phương án 4" />
+            <TableColumn fx:id="cl_padung" prefWidth="145.5999755859375" text="Phương án đúng" />
         </columns>
       </TableView>
-      <TableView layoutX="-224.0" layoutY="-229.0" prefHeight="200.0" prefWidth="200.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
-        </columns>
-      </TableView>
+      <Label layoutX="22.0" layoutY="362.0" text="Điểm số của bạn:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_diem" layoutX="183.0" layoutY="360.0" prefHeight="26.0" prefWidth="59.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>

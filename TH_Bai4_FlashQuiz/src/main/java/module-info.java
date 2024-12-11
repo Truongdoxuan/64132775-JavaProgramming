@@ -6,4 +6,8 @@ module th.doxuantruong.flashquiz.th_bai4_flashquiz {
 
   opens th.doxuantruong.flashquiz.th_bai4_flashquiz to javafx.fxml;
   exports th.doxuantruong.flashquiz.th_bai4_flashquiz;
+  exports th.doxuantruong.flashquiz.th_bai4_flashquiz.models;
+  opens th.doxuantruong.flashquiz.th_bai4_flashquiz.models to javafx.fxml;
+  exports th.doxuantruong.flashquiz.th_bai4_flashquiz.controller;
+  opens th.doxuantruong.flashquiz.th_bai4_flashquiz.controller to javafx.fxml;
 }

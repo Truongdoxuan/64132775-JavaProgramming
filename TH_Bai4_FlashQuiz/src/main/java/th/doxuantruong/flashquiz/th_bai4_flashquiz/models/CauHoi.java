@@ -1,15 +1,16 @@
-package th.doxuantruong.flashquiz.th_bai4_flashquiz;
+package th.doxuantruong.flashquiz.th_bai4_flashquiz.models;
 
-public class CauHoi_Controller {
+public class CauHoi {
   private String noiDung;
   private String hinh;
   private String pa1;
   private String pa2;
   private String pa3;
   private String pa4;
-  private int paDung;
+  private String paDung;
+  private boolean selected;
 
-  public CauHoi_Controller(String noiDung, String hinh, String pa1, String pa2, String pa3, String pa4, int paDung) {
+  public CauHoi(String noiDung, String hinh, String pa1, String pa2, String pa3, String pa4, String paDung) {
     this.noiDung = noiDung;
     this.hinh = hinh;
     this.pa1 = pa1;
@@ -17,6 +18,7 @@ public class CauHoi_Controller {
     this.pa3 = pa3;
     this.pa4 = pa4;
     this.paDung = paDung;
+    this.selected = false;
   }
 
   public String getNoiDung() {
@@ -43,7 +45,15 @@ public class CauHoi_Controller {
     return pa4;
   }
 
-  public int getPaDung() {
+  public String getPaDung() {
     return paDung;
+  }
+
+  public boolean isSelected() {
+    return selected;
+  }
+
+  public void setSelected(boolean selected) {
+    this.selected = selected;
   }
 }
