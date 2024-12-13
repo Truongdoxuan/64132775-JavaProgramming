@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                th.doxuantruong.simpledict.th5_simpledict/th.doxuantruong.simpledict.th5_simpledict.HelloApplication
+                                th.doxuantruong.simpledict.th5_simpledict/th.doxuantruong.simpledict.th5_simpledict.MainApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

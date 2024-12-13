@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #1E1B27;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="th.doxuantruong.simpledict.th5_simpledict.Dict_Controller">
+   <children>
+      <Label layoutX="57.0" layoutY="66.0" prefHeight="36.0" prefWidth="234.0" text="DICTIONARY APP" textAlignment="CENTER" textFill="#a6a9ff">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_eng" layoutX="56.0" layoutY="162.0" prefHeight="36.0" prefWidth="150.0" />
+      <Button fx:id="btn_search" layoutX="212.0" layoutY="162.0" mnemonicParsing="false" onAction="#translate" prefHeight="36.0" prefWidth="78.0" style="-fx-background-color: #953CD0;" text="Tìm kiếm" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="lb_eng_text" layoutX="56.0" layoutY="215.0" prefHeight="37.0" prefWidth="150.0" textFill="#a6a9ff">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="275.0" text="Phiên âm" textFill="#a6a9ff">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="359.0" text="Nghĩa Tiếng Việt" textFill="#a6a9ff">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_vie" layoutX="57.0" layoutY="399.0" prefHeight="36.0" prefWidth="234.0" />
+      <Button layoutX="125.0" layoutY="462.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="87.0" style="-fx-background-color: #953CD0;" text="Thêm mới" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="42.0" fitWidth="37.0" layoutX="240.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/volume.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_phienam" layoutX="57.0" layoutY="304.0" prefHeight="36.0" prefWidth="234.0" />
+      <Label layoutX="56.0" layoutY="124.0" text="Từ Tiếng Anh" textFill="#a6a9ff">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
